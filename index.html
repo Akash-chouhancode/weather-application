@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wether-App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style></style>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-3 mt-5">
+          <form class="form-inline d-flex">
+            <input
+              type="search"
+              class="form-control me-2 mr-sm-2"
+              placeholder="search"
+              id="citybox"
+            />
+            <button type="button" class="btn btn-outline-success my-2 my-sm-0" onclick="checkwether()">
+              Search
+            </button>
+          </form>
+
+          <div class="wether">
+            <img src="/img/clouds.png" alt="" class="wether-icon mx-5" id="wicon" />
+            <h1 class="temp text-center" id="temp"></h1>
+            <h2 class="city text-center" id="city"></h2>
+            <div class="container my-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img src="/img/humidity.png" alt="" />
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <p class="humid text-center"  id="humid"></p>
+                          <p class="text-center">Humidity</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img src="/img/wind.png" alt="" />
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <p class="wind text-center" id="wind"></p>
+                          <p class="text-center">Wind Speed</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
